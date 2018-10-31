@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+
+
+    <ul>
+      <form action="/addMovie" method = "POST">
+        <input id="titleInput" type="text" name="title" value="">
+
+
+        <input id="genreInput" type="text" name="genre" value="">
+
+        <input id="descInput" type="text" name="description" value="">
+
+
+        <input id="imgInput" type="text" name="img" value="">
+        <button type ="submit" id="submit">Submit</button>
+      </form>
+        {{#movies}}
+
+        <h3>Movie Title: {{movieTitle}}</h3>
+        <h3>Movie Genre: {{movieGenre}}</h3>
+        <h3>Movie Description: {{movieDesc}}</h3>
+
+        {{/movies}}
+
+    </ul>
+
+
+  </body>
+</html>
